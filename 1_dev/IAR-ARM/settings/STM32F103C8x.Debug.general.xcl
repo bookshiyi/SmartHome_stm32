@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\bin\armjlink2.dll" 
+
+"E:\1_workspace\201804_smarthome\1_src\1_dev\IAR-ARM\Debug\Exe\STM32F103C8x.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\arm\config\debugger\ST\STM32F1xx_XL.dmac" 
+
+
+
+
