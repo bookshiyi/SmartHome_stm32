@@ -9,4 +9,4 @@ STM32软件部分使用HAL库编写，ESP8266使用的是机智云MCU方案的�
 提供了数据点的excel表格，可以直接导入到你的开发者账号中
 
 
-https://github.com/bookshiyi/SmartHome_stm32/raw/master/软件流程图.png
+![软件里流程图]（https://github.com/bookshiyi/SmartHome_stm32/raw/master/软件流程图.png）
