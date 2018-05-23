@@ -301,7 +301,7 @@ void my_oled_hadler()
     OLED_DispStr(0, 32, "humi:    %", &tFont12);//湿度
     OLED_DisDigital(50, 32, currentDataPoint.valuerh, &tFont12);
 
-    OLED_DispStr(0, 50, "    -  -  -  : ", &tFont12);//符号
+    OLED_DispStr(0, 50, "    -  -  -  :   ", &tFont12);//符号
     OLED_DisDigital(0, 52, gizwitsProtocol.TimeNTP.year, &tFont12);
     OLED_DisDigital(36, 52, gizwitsProtocol.TimeNTP.month, &tFont12);
     OLED_DisDigital(54, 52, gizwitsProtocol.TimeNTP.day, &tFont12);
@@ -323,6 +323,7 @@ void my_ir_handler()
                 LedWrite(2,1);
                 LedWrite(3,1);
                 RelayWrite(4,1);
+                currentDataPoint.valuebuzz=1;
                 currentDataPoint.valuerelay_4=1;
             }
             else//如果没人
@@ -331,6 +332,7 @@ void my_ir_handler()
                 LedWrite(1,0);
                 LedWrite(2,0);
                 LedWrite(3,0);
+                currentDataPoint.valuebuzz=0;
                 currentDataPoint.valuerelay_4=0;
             }
         }
@@ -350,6 +352,7 @@ void my_ir_handler()
                 LedWrite(1,0);
                 LedWrite(2,0);
                 LedWrite(3,0);
+                currentDataPoint.valuebuzz=0;
                 currentDataPoint.valuerelay_4=0;
             }
         }
@@ -366,6 +369,7 @@ void my_ir_handler()
                 LedWrite(2,1);
                 LedWrite(3,1);
                 RelayWrite(4,1);
+                currentDataPoint.valuebuzz=1;
                 currentDataPoint.valuerelay_4=1;
             }
             else//如果没人
@@ -374,6 +378,7 @@ void my_ir_handler()
                 LedWrite(1,0);
                 LedWrite(2,0);
                 LedWrite(3,0);
+                currentDataPoint.valuebuzz=0;
                 currentDataPoint.valuerelay_4=0;
             }
         }
@@ -550,7 +555,6 @@ void userInit(void)
     memset((uint8_t*)&currentDataPoint, 0, sizeof(dataPoint_t));
     OLED_Init();
     OLED_DispStr(0, 0, "-- Smart Home --", &tFont16);
-    irInit();
     LedInit();
     RelayInit();
     BuzzInit();

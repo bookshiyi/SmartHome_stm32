@@ -87,8 +87,8 @@ Section Cross References
     gizwits_product.o(i.my_humi_handler) refers to gizwits_product.o(.bss) for .bss
     gizwits_product.o(i.my_ir_handler) refers to hal_infrared.o(i.irRead) for irRead
     gizwits_product.o(i.my_ir_handler) refers to hal_buzz.o(i.BuzzWrite) for BuzzWrite
-    gizwits_product.o(i.my_ir_handler) refers to hal_relay.o(i.RelayWrite) for RelayWrite
     gizwits_product.o(i.my_ir_handler) refers to hal_led.o(i.LedWrite) for LedWrite
+    gizwits_product.o(i.my_ir_handler) refers to hal_relay.o(i.RelayWrite) for RelayWrite
     gizwits_product.o(i.my_ir_handler) refers to gizwits_product.o(.bss) for .bss
     gizwits_product.o(i.my_oled_hadler) refers to oled.o(i.OLED_DispStr) for OLED_DispStr
     gizwits_product.o(i.my_oled_hadler) refers to oled.o(i.OLED_DisDigital) for OLED_DisDigital
@@ -116,10 +116,10 @@ Section Cross References
     gizwits_product.o(i.userInit) refers to memseta.o(.text) for __aeabi_memclr
     gizwits_product.o(i.userInit) refers to oled.o(i.OLED_Init) for OLED_Init
     gizwits_product.o(i.userInit) refers to oled.o(i.OLED_DispStr) for OLED_DispStr
-    gizwits_product.o(i.userInit) refers to hal_infrared.o(i.irInit) for irInit
     gizwits_product.o(i.userInit) refers to hal_led.o(i.LedInit) for LedInit
     gizwits_product.o(i.userInit) refers to hal_relay.o(i.RelayInit) for RelayInit
     gizwits_product.o(i.userInit) refers to hal_buzz.o(i.BuzzInit) for BuzzInit
+    gizwits_product.o(i.userInit) refers to hal_infrared.o(i.irInit) for irInit
     gizwits_product.o(i.userInit) refers to printf8.o(i.__0printf$8) for __2printf
     gizwits_product.o(i.userInit) refers to hal_temp_hum.o(i.dht11Init) for dht11Init
     gizwits_product.o(i.userInit) refers to hal_buzz.o(i.BuzzWrite) for BuzzWrite
@@ -1719,26 +1719,26 @@ Image Symbol Table
     i.my_heater_handler                      0x0800486c   Section        0  gizwits_product.o(i.my_heater_handler)
     i.my_humi_handler                        0x080048f0   Section        0  gizwits_product.o(i.my_humi_handler)
     i.my_ir_handler                          0x08004958   Section        0  gizwits_product.o(i.my_ir_handler)
-    i.my_oled_hadler                         0x080049e4   Section        0  gizwits_product.o(i.my_oled_hadler)
-    i.my_temp_handler                        0x08004aa4   Section        0  gizwits_product.o(i.my_temp_handler)
-    i.rbCanRead                              0x08004b50   Section        0  ringbuffer.o(i.rbCanRead)
-    i.rbCanWrite                             0x08004b82   Section        0  ringbuffer.o(i.rbCanWrite)
-    i.rbCapacity                             0x08004b9e   Section        0  ringbuffer.o(i.rbCapacity)
-    i.rbCreate                               0x08004baa   Section        0  ringbuffer.o(i.rbCreate)
-    i.rbRead                                 0x08004bbc   Section        0  ringbuffer.o(i.rbRead)
-    i.rbWrite                                0x08004c3a   Section        0  ringbuffer.o(i.rbWrite)
-    i.readKeyValue                           0x08004cc8   Section        0  hal_key.o(i.readKeyValue)
-    i.timerInit                              0x08004d50   Section        0  gizwits_product.o(i.timerInit)
-    i.uartInit                               0x08004d5c   Section        0  gizwits_product.o(i.uartInit)
-    i.uartWrite                              0x08004d70   Section        0  gizwits_product.o(i.uartWrite)
-    i.userHandle                             0x08004e28   Section        0  gizwits_product.o(i.userHandle)
-    i.userInit                               0x08004e4c   Section        0  gizwits_product.o(i.userInit)
-    .constdata                               0x08004f00   Section     1524  asc12.o(.constdata)
-    .constdata                               0x080054f4   Section     4096  asc16.o(.constdata)
-    .constdata                               0x080064f4   Section      366  hz12.o(.constdata)
-    .constdata                               0x08006662   Section     1362  hz16.o(.constdata)
-    .constdata                               0x08006bb4   Section       16  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08006bc4   Section        8  system_stm32f1xx.o(.constdata)
+    i.my_oled_hadler                         0x08004a08   Section        0  gizwits_product.o(i.my_oled_hadler)
+    i.my_temp_handler                        0x08004acc   Section        0  gizwits_product.o(i.my_temp_handler)
+    i.rbCanRead                              0x08004b78   Section        0  ringbuffer.o(i.rbCanRead)
+    i.rbCanWrite                             0x08004baa   Section        0  ringbuffer.o(i.rbCanWrite)
+    i.rbCapacity                             0x08004bc6   Section        0  ringbuffer.o(i.rbCapacity)
+    i.rbCreate                               0x08004bd2   Section        0  ringbuffer.o(i.rbCreate)
+    i.rbRead                                 0x08004be4   Section        0  ringbuffer.o(i.rbRead)
+    i.rbWrite                                0x08004c62   Section        0  ringbuffer.o(i.rbWrite)
+    i.readKeyValue                           0x08004cf0   Section        0  hal_key.o(i.readKeyValue)
+    i.timerInit                              0x08004d78   Section        0  gizwits_product.o(i.timerInit)
+    i.uartInit                               0x08004d84   Section        0  gizwits_product.o(i.uartInit)
+    i.uartWrite                              0x08004d98   Section        0  gizwits_product.o(i.uartWrite)
+    i.userHandle                             0x08004e50   Section        0  gizwits_product.o(i.userHandle)
+    i.userInit                               0x08004e74   Section        0  gizwits_product.o(i.userInit)
+    .constdata                               0x08004f24   Section     1524  asc12.o(.constdata)
+    .constdata                               0x08005518   Section     4096  asc16.o(.constdata)
+    .constdata                               0x08006518   Section      366  hz12.o(.constdata)
+    .constdata                               0x08006686   Section     1362  hz16.o(.constdata)
+    .constdata                               0x08006bd8   Section       16  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08006be8   Section        8  system_stm32f1xx.o(.constdata)
     .data                                    0x20000000   Section        5  main.o(.data)
     .data                                    0x20000008   Section        8  gizwits_product.o(.data)
     timerMsCount                             0x2000000c   Data           4  gizwits_product.o(.data)
@@ -2014,29 +2014,29 @@ Image Symbol Table
     mcuRestart                               0x08004861   Thumb Code    10  gizwits_product.o(i.mcuRestart)
     my_heater_handler                        0x0800486d   Thumb Code   124  gizwits_product.o(i.my_heater_handler)
     my_humi_handler                          0x080048f1   Thumb Code   100  gizwits_product.o(i.my_humi_handler)
-    my_ir_handler                            0x08004959   Thumb Code   134  gizwits_product.o(i.my_ir_handler)
-    my_oled_hadler                           0x080049e5   Thumb Code   138  gizwits_product.o(i.my_oled_hadler)
-    my_temp_handler                          0x08004aa5   Thumb Code   168  gizwits_product.o(i.my_temp_handler)
-    rbCanRead                                0x08004b51   Thumb Code    50  ringbuffer.o(i.rbCanRead)
-    rbCanWrite                               0x08004b83   Thumb Code    28  ringbuffer.o(i.rbCanWrite)
-    rbCapacity                               0x08004b9f   Thumb Code    12  ringbuffer.o(i.rbCapacity)
-    rbCreate                                 0x08004bab   Thumb Code    18  ringbuffer.o(i.rbCreate)
-    rbRead                                   0x08004bbd   Thumb Code   126  ringbuffer.o(i.rbRead)
-    rbWrite                                  0x08004c3b   Thumb Code   142  ringbuffer.o(i.rbWrite)
-    readKeyValue                             0x08004cc9   Thumb Code   130  hal_key.o(i.readKeyValue)
-    timerInit                                0x08004d51   Thumb Code     6  gizwits_product.o(i.timerInit)
-    uartInit                                 0x08004d5d   Thumb Code    10  gizwits_product.o(i.uartInit)
-    uartWrite                                0x08004d71   Thumb Code   140  gizwits_product.o(i.uartWrite)
-    userHandle                               0x08004e29   Thumb Code    32  gizwits_product.o(i.userHandle)
-    userInit                                 0x08004e4d   Thumb Code   114  gizwits_product.o(i.userInit)
-    g_Ascii12                                0x08004f00   Data        1524  asc12.o(.constdata)
-    g_Ascii16                                0x080054f4   Data        4096  asc16.o(.constdata)
-    g_Hz12                                   0x080064f4   Data         366  hz12.o(.constdata)
-    g_Hz16                                   0x08006662   Data        1362  hz16.o(.constdata)
-    AHBPrescTable                            0x08006bb4   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x08006bc4   Data           8  system_stm32f1xx.o(.constdata)
-    Region$$Table$$Base                      0x08006bcc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08006bec   Number         0  anon$$obj.o(Region$$Table)
+    my_ir_handler                            0x08004959   Thumb Code   170  gizwits_product.o(i.my_ir_handler)
+    my_oled_hadler                           0x08004a09   Thumb Code   138  gizwits_product.o(i.my_oled_hadler)
+    my_temp_handler                          0x08004acd   Thumb Code   168  gizwits_product.o(i.my_temp_handler)
+    rbCanRead                                0x08004b79   Thumb Code    50  ringbuffer.o(i.rbCanRead)
+    rbCanWrite                               0x08004bab   Thumb Code    28  ringbuffer.o(i.rbCanWrite)
+    rbCapacity                               0x08004bc7   Thumb Code    12  ringbuffer.o(i.rbCapacity)
+    rbCreate                                 0x08004bd3   Thumb Code    18  ringbuffer.o(i.rbCreate)
+    rbRead                                   0x08004be5   Thumb Code   126  ringbuffer.o(i.rbRead)
+    rbWrite                                  0x08004c63   Thumb Code   142  ringbuffer.o(i.rbWrite)
+    readKeyValue                             0x08004cf1   Thumb Code   130  hal_key.o(i.readKeyValue)
+    timerInit                                0x08004d79   Thumb Code     6  gizwits_product.o(i.timerInit)
+    uartInit                                 0x08004d85   Thumb Code    10  gizwits_product.o(i.uartInit)
+    uartWrite                                0x08004d99   Thumb Code   140  gizwits_product.o(i.uartWrite)
+    userHandle                               0x08004e51   Thumb Code    32  gizwits_product.o(i.userHandle)
+    userInit                                 0x08004e75   Thumb Code   110  gizwits_product.o(i.userInit)
+    g_Ascii12                                0x08004f24   Data        1524  asc12.o(.constdata)
+    g_Ascii16                                0x08005518   Data        4096  asc16.o(.constdata)
+    g_Hz12                                   0x08006518   Data         366  hz12.o(.constdata)
+    g_Hz16                                   0x08006686   Data        1362  hz16.o(.constdata)
+    AHBPrescTable                            0x08006bd8   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x08006be8   Data           8  system_stm32f1xx.o(.constdata)
+    Region$$Table$$Base                      0x08006bf0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08006c10   Number         0  anon$$obj.o(Region$$Table)
     keys                                     0x20000000   Data           5  main.o(.data)
     aRxBuffer                                0x20000008   Data           1  gizwits_product.o(.data)
     keyCountTime                             0x20000024   Data           1  hal_key.o(.data)
@@ -2063,9 +2063,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006c34, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006c58, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00006bec, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00006c10, Max: 0x00010000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2259,28 +2259,28 @@ Memory Map of the image
     0x0800486a   0x00000002   PAD
     0x0800486c   0x00000084   Code   RO          340    i.my_heater_handler  gizwits_product.o
     0x080048f0   0x00000068   Code   RO          341    i.my_humi_handler   gizwits_product.o
-    0x08004958   0x0000008c   Code   RO          342    i.my_ir_handler     gizwits_product.o
-    0x080049e4   0x000000c0   Code   RO          343    i.my_oled_hadler    gizwits_product.o
-    0x08004aa4   0x000000ac   Code   RO          344    i.my_temp_handler   gizwits_product.o
-    0x08004b50   0x00000032   Code   RO         1243    i.rbCanRead         ringbuffer.o
-    0x08004b82   0x0000001c   Code   RO         1244    i.rbCanWrite        ringbuffer.o
-    0x08004b9e   0x0000000c   Code   RO         1245    i.rbCapacity        ringbuffer.o
-    0x08004baa   0x00000012   Code   RO         1246    i.rbCreate          ringbuffer.o
-    0x08004bbc   0x0000007e   Code   RO         1248    i.rbRead            ringbuffer.o
-    0x08004c3a   0x0000008e   Code   RO         1249    i.rbWrite           ringbuffer.o
-    0x08004cc8   0x00000088   Code   RO          657    i.readKeyValue      hal_key.o
-    0x08004d50   0x0000000c   Code   RO          345    i.timerInit         gizwits_product.o
-    0x08004d5c   0x00000014   Code   RO          346    i.uartInit          gizwits_product.o
-    0x08004d70   0x000000b8   Code   RO          347    i.uartWrite         gizwits_product.o
-    0x08004e28   0x00000024   Code   RO          348    i.userHandle        gizwits_product.o
-    0x08004e4c   0x000000b4   Code   RO          349    i.userInit          gizwits_product.o
-    0x08004f00   0x000005f4   Data   RO         1290    .constdata          asc12.o
-    0x080054f4   0x00001000   Data   RO         1297    .constdata          asc16.o
-    0x080064f4   0x0000016e   Data   RO         1304    .constdata          hz12.o
-    0x08006662   0x00000552   Data   RO         1311    .constdata          hz16.o
-    0x08006bb4   0x00000010   Data   RO         3426    .constdata          system_stm32f1xx.o
-    0x08006bc4   0x00000008   Data   RO         3427    .constdata          system_stm32f1xx.o
-    0x08006bcc   0x00000020   Data   RO         3793    Region$$Table       anon$$obj.o
+    0x08004958   0x000000b0   Code   RO          342    i.my_ir_handler     gizwits_product.o
+    0x08004a08   0x000000c4   Code   RO          343    i.my_oled_hadler    gizwits_product.o
+    0x08004acc   0x000000ac   Code   RO          344    i.my_temp_handler   gizwits_product.o
+    0x08004b78   0x00000032   Code   RO         1243    i.rbCanRead         ringbuffer.o
+    0x08004baa   0x0000001c   Code   RO         1244    i.rbCanWrite        ringbuffer.o
+    0x08004bc6   0x0000000c   Code   RO         1245    i.rbCapacity        ringbuffer.o
+    0x08004bd2   0x00000012   Code   RO         1246    i.rbCreate          ringbuffer.o
+    0x08004be4   0x0000007e   Code   RO         1248    i.rbRead            ringbuffer.o
+    0x08004c62   0x0000008e   Code   RO         1249    i.rbWrite           ringbuffer.o
+    0x08004cf0   0x00000088   Code   RO          657    i.readKeyValue      hal_key.o
+    0x08004d78   0x0000000c   Code   RO          345    i.timerInit         gizwits_product.o
+    0x08004d84   0x00000014   Code   RO          346    i.uartInit          gizwits_product.o
+    0x08004d98   0x000000b8   Code   RO          347    i.uartWrite         gizwits_product.o
+    0x08004e50   0x00000024   Code   RO          348    i.userHandle        gizwits_product.o
+    0x08004e74   0x000000b0   Code   RO          349    i.userInit          gizwits_product.o
+    0x08004f24   0x000005f4   Data   RO         1290    .constdata          asc12.o
+    0x08005518   0x00001000   Data   RO         1297    .constdata          asc16.o
+    0x08006518   0x0000016e   Data   RO         1304    .constdata          hz12.o
+    0x08006686   0x00000552   Data   RO         1311    .constdata          hz16.o
+    0x08006bd8   0x00000010   Data   RO         3426    .constdata          system_stm32f1xx.o
+    0x08006be8   0x00000008   Data   RO         3427    .constdata          system_stm32f1xx.o
+    0x08006bf0   0x00000020   Data   RO         3793    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00002750, Max: 0x00005000, ABSOLUTE)
@@ -2317,10 +2317,10 @@ Image component sizes
         56          0          0          0          0       1928   common.o
        290          0          0          0          0       4085   datapointtools.o
         52          0          0          0          0        898   delay.o
-      2210        772          0          8         37      13918   gizwits_product.o
+      2246        776          0          8         37      13934   gizwits_product.o
       6816       2482          0         16        477      25786   gizwits_protocol.o
        136         20          0          0          0       1402   hal_buzz.o
-        52         10          0          0          0        914   hal_infrared.o
+        52         10          0          0          0        918   hal_infrared.o
        438         20          0         10          0       3585   hal_key.o
        160         18          0          0          0        985   hal_led.o
        200         16          0          0          0       1053   hal_relay.o
@@ -2344,7 +2344,7 @@ Image component sizes
         72         16         24          4          0       1135   system_stm32f1xx.o
 
     ----------------------------------------------------------------------
-     18514       3926       7640         68       9992     588770   Object Totals
+     18550       3930       7640         68       9992     588790   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         32          0          0          3          6          0   (incl. Padding)
 
@@ -2390,15 +2390,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     19988       3996       7640         72       9992     581166   Grand Totals
-     19988       3996       7640         72       9992     581166   ELF Image Totals
-     19988       3996       7640         72          0          0   ROM Totals
+     20024       4000       7640         72       9992     581186   Grand Totals
+     20024       4000       7640         72       9992     581186   ELF Image Totals
+     20024       4000       7640         72          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                27628 (  26.98kB)
+    Total RO  Size (Code + RO Data)                27664 (  27.02kB)
     Total RW  Size (RW Data + ZI Data)             10064 (   9.83kB)
-    Total ROM Size (Code + RO Data + RW Data)      27700 (  27.05kB)
+    Total ROM Size (Code + RO Data + RW Data)      27736 (  27.09kB)
 
 ==============================================================================
 

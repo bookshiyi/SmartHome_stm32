@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fadingEdge="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+        
+		
+		<!-- 玄关灯(布尔可写) -->
+
+
+		<!-- 空调(布尔可写) -->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:text="当前温度" />
+
+			<TextView
+				android:id="@+id/tv_data_temp"
+				android:layout_width="110dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:gravity="end"
+				android:textColor="#fe0000"
+				android:textSize="16sp" />
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:text="当前湿度" />
+
+			<TextView
+				android:id="@+id/tv_data_rh"
+				android:layout_width="110dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:gravity="end"
+				android:textColor="@color/gray"
+				android:textSize="16sp" />
+		</RelativeLayout>
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="空调" />
+
+			 <Switch
+				 android:id="@+id/sw_bool_relay_1"
+				 android:layout_width="wrap_content"
+				 android:layout_height="match_parent"
+				 android:layout_alignParentRight="true"
+				 android:layout_centerVertical="true"
+				 android:textOff="关闭"
+				 android:textOn="打开" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- 加湿器(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="加湿器" />
+
+			 <Switch
+				 android:id="@+id/sw_bool_relay_2"
+				 android:layout_width="wrap_content"
+				 android:layout_height="match_parent"
+				 android:layout_alignParentRight="true"
+				 android:layout_centerVertical="true"
+				 android:textOff="关闭"
+				 android:textOn="打开" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- 蜂鸣器(布尔可写) -->
+
+
+		<!-- 热水器(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="热水器" />
+
+			 <Switch
+				 android:id="@+id/sw_bool_relay_3"
+				 android:layout_width="wrap_content"
+				 android:layout_height="match_parent"
+				 android:layout_alignParentRight="true"
+				 android:layout_centerVertical="true"
+				 android:textOff="关闭"
+				 android:textOn="打开" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- 自动模式？(布尔可写) -->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:text="玄关灯" />
+
+			<Switch
+				android:id="@+id/sw_bool_relay_4"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textOff="关闭"
+				android:textOn="打开" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:text="蜂鸣器" />
+
+			<Switch
+				android:id="@+id/sw_bool_buzz"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textOff="关闭"
+				android:textOn="打开" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentStart="true"
+				android:layout_centerVertical="true"
+				android:text="安全模式？" />
+
+			<Switch
+				android:id="@+id/sw_bool_mode_safe"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textOff="未开启"
+				android:textOn="开启" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:text="自动模式？" />
+
+			<Switch
+				android:id="@+id/sw_bool_mode_auto_manu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textOff="手动"
+				android:textOn="自动" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- 夏季模式？(布尔可写) -->
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentStart="true"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="48dp"
+				android:text="冬夏切换" />
+
+			<Switch
+				android:id="@+id/sw_bool_mode_winter_summer"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textOff="冬季"
+				android:textOn="夏季" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- 安全模式？(布尔可写) -->
+
+
+		<!-- 目标温度上限(数值可写) -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentStart="true"
+				android:layout_alignTop="@+id/tv_data_temp_upper"
+				android:layout_marginStart="49dp"
+				android:text="目标温度上限" />
+
+			<TextView
+				android:id="@+id/tv_data_temp_upper"
+				android:layout_width="110dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:gravity="end"
+				android:textSize="16sp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tv_data_temp_upper"
+				android:layout_marginTop="10dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:textSize="16sp" />
+
+				<SeekBar
+					android:id="@+id/sb_data_temp_upper"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:max="80" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="80"
+					android:textSize="16sp" />
+			</LinearLayout>
+
+		</RelativeLayout>			
+	
+		
+		<!-- 目标温度下限(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+			 <TextView
+				 android:layout_width="wrap_content"
+				 android:layout_height="match_parent"
+				 android:layout_alignParentStart="true"
+				 android:layout_alignTop="@+id/tv_data_temp_lower"
+				 android:layout_marginStart="49dp"
+				 android:text="目标温度下限" />
+
+			 <TextView
+				 android:id="@+id/tv_data_temp_lower"
+				 android:layout_width="110dp"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentRight="true"
+				 android:gravity="end"
+				 android:textSize="16sp" />
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_temp_lower"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_temp_lower"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="80" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="80" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- 目标湿度阈值 ±5%(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+			 <TextView
+				 android:layout_width="wrap_content"
+				 android:layout_height="match_parent"
+				 android:layout_alignParentStart="true"
+				 android:layout_alignTop="@+id/tv_data_humi_threshold"
+				 android:layout_marginStart="48dp"
+				 android:text="湿度阈值 ±5%" />
+
+			 <TextView
+				 android:id="@+id/tv_data_humi_threshold"
+				 android:layout_width="110dp"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentRight="true"
+				 android:gravity="end"
+				 android:textSize="16sp" />
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_humi_threshold"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="10" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_humi_threshold"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="80" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="90" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- 热水器定时-小时(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+			 <TextView
+				 android:layout_width="wrap_content"
+				 android:layout_height="match_parent"
+				 android:layout_alignParentStart="true"
+				 android:layout_alignTop="@+id/tv_data_heater_hour"
+				 android:layout_marginStart="48dp"
+				 android:text="热水器定时-小时" />
+
+			 <TextView
+				 android:id="@+id/tv_data_heater_hour"
+				 android:layout_width="110dp"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentRight="true"
+				 android:gravity="end"
+				 android:textSize="16sp" />
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_heater_hour"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_heater_hour"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="23" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="23" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- 热水器定时-分钟(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+
+			 <TextView
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentStart="true"
+				 android:layout_alignTop="@+id/tv_data_heater_min"
+				 android:layout_marginStart="49dp"
+				 android:text="热水器定时-分钟" />
+
+			 <TextView
+				 android:id="@+id/tv_data_heater_min"
+				 android:layout_width="110dp"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentRight="true"
+				 android:gravity="end"
+				 android:textSize="16sp" />
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_heater_min"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_heater_min"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="59" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="59" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- 人体红外(布尔只读) -->
+
+
+		<!-- 温度(数值只读) -->
+
+
+		<!-- 湿度(数值只读) -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="1dp"
+			android:background="@color/white"
+			android:padding="10dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:text="人体红外" />
+
+			<Switch
+				android:id="@+id/sw_bool_ir"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textOff="无"
+				android:textOn="有" />
+
+		</RelativeLayout>
+
+
+	</LinearLayout>
+
+</ScrollView>

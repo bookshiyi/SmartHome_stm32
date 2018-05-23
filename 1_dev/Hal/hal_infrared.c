@@ -20,22 +20,18 @@
 void irInit(void)
 {
     GPIO_InitTypeDef myGPIO_InitStruct;
-	
-    myGPIO_InitStruct.Mode = GPIO_MODE_AF_INPUT ;/////////////
-    myGPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-	
+
     myGPIO_InitStruct.Pin = Infrared_GPIO_Pin;
+    myGPIO_InitStruct.Mode = GPIO_MODE_INPUT;/////////////
+    myGPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+		//myGPIO_InitStruct.Pull = GPIO_PULLUP;
     HAL_GPIO_Init(Infrared_GPIO_Port, &myGPIO_InitStruct);
 }
 
 bool irRead(void)
 {
-    if(HAL_GPIO_ReadPin(Infrared_GPIO_Port, Infrared_GPIO_Pin))
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
+	bool res;
+    res=HAL_GPIO_ReadPin(Infrared_GPIO_Port, Infrared_GPIO_Pin);
+    return res;
+
 }
